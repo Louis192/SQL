@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS class_assigment;
+CREATE DATABASE class_assigment;
+USE class_assigment;
+DROP TABLE DEPARTMENTS;
+DROP TABLE EMPLOYEES;
+TRUNCATE TABLE DEPARTMENTS;
+TRUNCATE TABLE EMPLOYEES;
+    
+ 
+    
+    
+CREATE TABLE Departments(Customer_Id int Auto_Increment PRIMARY KEY,code int,Name TEXT,Budget REAL);
+
+
+
+CREATE TABLE Employees(
+Customer_Id int Auto_Increment PRIMARY KEY,
+SSN int,Name TEXT,LastName TEXT,Department int,
+FOREIGN KEY (Department) REFERENCES Departments(Customer_Id));
