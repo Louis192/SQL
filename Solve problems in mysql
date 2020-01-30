@@ -1,0 +1,13 @@
+#1 Select all the data of employees that work in department 37 or department 77.
+SELECT NAME,LASTNAME,DEPARTMENT 
+from EMPLOYEES WHERE DEPARTMENT='37' or DEPARTMENT='77';
+#2 Select all the data of employees whose last name begins with an "S".
+SELECT NAME,LASTNAME,DEPARTMENT 
+from EMPLOYEES WHERE LASTNAME LIKE '%S';
+#3 Select the sum of all the departments' budgets.
+select sum(Budget) as sum from DEPARTMENTS;
+# 4 Select the number of employees in each department (you only need to show the department 
+# code and the number of employees).
+# 5 Show columns of tables
+show columns from employees;
+show columns from departments;
